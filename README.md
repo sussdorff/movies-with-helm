@@ -8,6 +8,18 @@ This example shows how to leverage [Okteto](https://github.com/okteto/okteto) to
 
 # Setup
 
+## Getting accounts and setting up the repository
+For this exercise you will need two accounts. One is a personal account on github.com (which is where this repository lies). Do this now if you haven't done so already and signin to your personal account.
+
+Once you have gotten your personal account on github.com, head over to [okteto](https://www.okteto.com/) and try it their [cloud offering](https://cloud.okteto.com/#/login). Use the login using github functionality. 
+
+Click on [Settings](https://cloud.okteto.com/#/settings/setup) to get yourself a Personal Access token (under developer settings). This will be needed in the next step, so keep a copy secured (as you wont be able to access it again and have to recreate it if forgotten).
+
+Now it is time to fork this repository into your github.com account. On the top right click on fork and create a [fork](https://github.com/sussdorff/movies-with-helm/fork) in your own personal github space. This will allow you to be more flexible and also experience push and pull requests.
+
+Time to head over to your [codespaces](https://github.com/codespaces) area and create your [new codespace](https://github.com/codespaces/new). Select the repository you have just forked, use the main branch and give it a little bit more computing power (4CPU should be fine, can be changed later).
+
+
 ## Okteto for running the application
 Once the CodeSpace is running, open a terminal, and run `okteto login --token $TOKEN` to log in to your Okteto Cloud account. Ignore the warning
 
